@@ -1,10 +1,15 @@
 from django.http import HttpResponse
 from jadeAssistant.models import Version
 from django.shortcuts import redirect
+import platform
 
-import sys
-sys.path.insert(0, '/home/nfoert/jadeserver/jadeServerUtilities/')
-import jadeServerUtilities as jsu
+if platform.system() == "Linux":
+    import sys
+    sys.path.insert(0, '/home/nfoert/jadeserver/jadeServerUtilities/')
+    import jadeServerUtilities as jsu
+
+elif platform.system() == "Windows":
+    import jadeServerUtilities.jadeServerUtilities as jsu
 
 def index(request):
     return redirect("https://nofoert.wixsite.com/jade")

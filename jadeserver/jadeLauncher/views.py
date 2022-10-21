@@ -1,14 +1,19 @@
 from django.http import HttpResponse, FileResponse
 from jadeLauncher.models import News, Launcher, Version, NewsCodes
 from django.shortcuts import redirect
+import platform
 
 import datetime
 from django.utils import timezone
 from django.contrib.auth.hashers import make_password, check_password
 
-import sys
-sys.path.insert(0, '/home/nfoert/jadeserver/jadeServerUtilities/')
-import jadeServerUtilities as jsu
+if platform.system() == "Linux":
+    import sys
+    sys.path.insert(0, '/home/nfoert/jadeserver/jadeServerUtilities/')
+    import jadeServerUtilities as jsu
+
+elif platform.system() == "Windows":
+    import jadeServerUtilities.jadeServerUtilities as jsu
 
 def index(request):
     return redirect("https://nofoert.wixsite.com/jade")
