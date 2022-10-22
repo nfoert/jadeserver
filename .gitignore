@@ -1,3 +1,4 @@
 jadeserver/db.sqlite3
 jadeserver/jadeserver/settings.py
 .venv
+venv
