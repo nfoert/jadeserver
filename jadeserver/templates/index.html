@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block mycss %} background-color:red; {% endblock mycss %}
+    </head>
+    <body>
+        {% include "nav.html"%}
+        <p>Hello, world! {{ url }}</p>
+    </body>
+</html>

@@ -21,6 +21,7 @@ urlpatterns = [
     path('jadeCore/', include('jadeCore.urls')),
     path('jadeAssistant/', include('jadeAssistant.urls')),
     path('jadeLauncher/', include('jadeLauncher.urls')),
+    path('jadesite/', include('jadesite.urls')),
     path('admin/', admin.site.urls)
 
 ]
