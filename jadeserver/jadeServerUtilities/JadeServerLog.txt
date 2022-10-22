@@ -12153,3 +12153,15 @@
 [10/21/2022] [14:26:7] |INFO| > Just subsringed.
 [10/21/2022] [14:26:7] |INFO| > Just subsringed.
 [10/21/2022] [14:26:7] |LAUNCHER ERROR| > Core/create tried to create a Jade Account, but it's not a valid create account url.
+[10/21/2022] [14:57:23] |INFO| > A user just requested the current version of the Jade Launcher.
+[10/21/2022] [14:57:36] |INFO| > The current version of Jade Assistant was just supplied to a user.
+[10/21/2022] [14:58:2] |INFO| > Just subsringed.
+[10/21/2022] [14:58:2] |INFO| > Just subsringed.
+[10/21/2022] [14:58:2] |INFO| > Just subsringed.
+[10/21/2022] [14:58:2] |INFO| > Just subsringed.
+[10/21/2022] [14:58:2] |LAUNCHER ERROR| > Core/create tried to create a Jade Account, but it's not a valid create account url.
+[10/21/2022] [14:58:22] |INFO| > Just subsringed.
+[10/21/2022] [14:58:22] |INFO| > Just subsringed.
+[10/21/2022] [14:58:22] |INFO| > Just subsringed.
+[10/21/2022] [14:58:22] |INFO| > Just subsringed.
+[10/21/2022] [14:58:22] |LAUNCHER ERROR| > Core/create tried to create a Jade Account, but it's not a valid create account url.
