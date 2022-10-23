@@ -54,10 +54,10 @@
 #top-break {}
 
 #welcome {
-	font-size:60px;
+	font-size:20px;
 	font-family:"Helvetica";
 	text-align: center;
-	height:70px:
+	height:70px;
 }
 
 #welcome-text {
@@ -76,7 +76,12 @@
 	width: 60%;
 	border-radius: 10px;
 	margin: 0 auto;
-	padding-bottom:20px:
+	padding-bottom:20px;
+	padding-top:20px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	
 
 	
 }
