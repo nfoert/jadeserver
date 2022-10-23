@@ -1,10 +1,39 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
-        {% block mycss %} background-color:red; {% endblock mycss %}
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
     </head>
+    
     <body>
-        {% include "nav.html"%}
-        <p>Hello, world! {{ url }}</p>
+        <div id="main">
+            <!--<p> MAIN START </p>-->
+            <br id="top-break">
+            {% include "nav.html"%}
+            <p>Welcome! Url: {{ url }}</p>
+            <!--<p> MAIN END </p>-->
+            
+            <div id="welcome-box">
+                <div id="welcome">
+                    <p>Welcome to Jade</p>
+                </div>
+            
+                <div id="welcome-text">
+                        <p>My name is Jade and i'm a virtual assistant designed to be as helpful as possible. I can open apps for you and answer some questions.</p>
+                
+                </div>
+                
+            </div>
+        </div>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+#nav-bar {
+	background-color: white;
+	box-shadow: 3px 3px 2px gainsboro;
+	font-family:arial;
+	border-radius: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 95%;
+	margin: 0 auto;
+	height: 50px;
+	display: flex;
+    align-items: center;
+	
+	
+}
+
+#nav-img {
+	width:60px;
+	height:40px;
+	padding-right: 10px;
+	
+}
+
+
+
+#main {
+	background: linear-gradient(270deg, #42c9a6, #16b7e1, #e212e7);
+    background-size: 600% 600%;
+
+    -webkit-animation: mainGradient 30s ease infinite;
+    -moz-animation: mainGradient 30s ease infinite;
+    animation: mainGradient 30s ease infinite;
+	
+	height: 1000px;
+
+}
+
+@-webkit-keyframes mainGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes mainGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes mainGradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#top-break {}
+
+#welcome {
+	font-size:60px;
+	font-family:"Helvetica";
+	text-align: center;
+	height:70px:
+}
+
+#welcome-text {
+	font-size:15px;
+	font-family:"Helvetica";
+	text-align: center;
+	padding-right:100px;
+	padding-left:100px;
+	
+}
+
+#welcome-box {
+	background-color: white;
+	box-shadow: 3px 3px 2px gainsboro;
+	font-family:arial;
+	width: 60%;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding-bottom:20px:
+
+	
+}
