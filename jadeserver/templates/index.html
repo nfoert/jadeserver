@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
@@ -7,7 +8,7 @@
     
     <body>
         <div id="main">
-            <br id="top-break">
+            
             {% include "nav.html"%}
             <br>
             <br>
@@ -19,7 +20,7 @@
                 </div>
             
                 <div id="welcome-text">
-                        <p>My name is Jade and i'm a virtual assistant designed to be as helpful as possible. I can open apps for you and answer some questions.</p>
+                        <p>My name is Jade and I'm a virtual assistant designed to be as helpful as possible. I can open apps for you and answer some questions.</p>
                 
                 </div>
                 
@@ -31,10 +32,14 @@
             <div id="big-box">
                 <div id="jade-launcher">
                     <p>Jade Launcher</p>
+                    <p id="app-desc">The Jade Launcher is the one and only place to launch apps like Jade Assistant, keep apps updated, and download new ones.</p>
+                    <br>
+                    <a href = "{% url 'download' %}" id="BUTTON-download-big-box">Download</a>
                 </div>
 
                 <div id="jade-assistant">
                     <p>Jade Assistant</p>
+                    <p id="app-desc">Jade Assistant is the virtual assistant that can help you open some apps, answer Q&A and change size to fit what you're working on.<br><br> You can download it in the Jade Launcher.</p>
                 </div>
 
             </div>

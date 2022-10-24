@@ -7,3 +7,6 @@ def index(request):
         'url': url,
     }
     return render(request, "index.html", context)
+
+def download(request):
+    return render(request, "download.html")

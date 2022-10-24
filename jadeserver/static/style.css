@@ -32,7 +32,7 @@ html, body {
 
 
 #main {
-	background: linear-gradient(270deg, #42c9a6, #16b7e1, #e212e7);
+	background: linear-gradient(270deg, #42c9a6, #16b7e1, #a85dfd);
     background-size: 600% 600%;
 
     -webkit-animation: mainGradient 30s ease infinite;
@@ -108,7 +108,7 @@ html, body {
 	width: 100%;
 	background-color: white;
 	box-shadow: 3px 3px 2px gainsboro;
-	height:400px;
+	height:300px;
 	border-radius: 10px;
 	display:flex;
 	flex-direction:row;
@@ -119,7 +119,7 @@ html, body {
 }
 
 #jade-launcher {
-	border: double 0.3em transparent;
+	border: double 0.2em transparent;
  	border-radius: 10px;
     background-image: linear-gradient(white, white), linear-gradient(100deg, rgb(4, 204, 4), rgb(22, 186, 236), rgba(158, 5, 158, 0.87));
     background-origin: border-box;
@@ -128,12 +128,12 @@ html, body {
 	margin-right:auto;
 	width:250px;
 	text-align: center;
-	font-size: 22px;
+	font-size: 25px;
 	font-family: GloberSemiBold;
 }
 
 #jade-assistant {
-	border: double 0.3em transparent;
+	border: double 0.2em transparent;
  	border-radius: 10px;
     background-image: linear-gradient(white, white), linear-gradient(45deg, rgb(4, 204, 4), rgb(22, 186, 236), rgba(158, 5, 158, 0.87));
     background-origin: border-box;
@@ -142,7 +142,7 @@ html, body {
 	margin-right:auto;
 	width:250px;
 	text-align: center;
-	font-size: 22px;
+	font-size: 25px;
 	font-family: GloberSemiBold;
 
 }
@@ -155,3 +155,44 @@ html, body {
 	padding-top:20px;
 }
 
+#app-desc {
+	font-size: 15px;
+	padding-left:10px;
+	padding-right:10px;
+	font-family: GloberSemiBold;
+
+}
+
+#BUTTON-download-big-box {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius: 5px;
+	background-color: rgb(0, 150, 80);
+	border-radius: 10px;
+	font: 10pt "Calibri";
+	color:white;
+	margin-top:10px;
+	text-decoration: none;
+}
+
+#BUTTON-download-big-box:hover {
+	background-color: rgb(0, 170, 100);
+}
+
+#BUTTON-download-big-box:active {
+	background-color: rgb(0, 200, 120);
+}
+
+#nav-button {
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	background-color: rgb(0, 150, 80);
+	border-radius: 10px;
+	font: 10pt "Calibri";
+	color:white;
+	text-decoration: none;
+}
