@@ -186,13 +186,137 @@ html, body {
 }
 
 #nav-button {
-	
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 	border-radius: 5px;
 	background-color: rgb(0, 150, 80);
 	border-radius: 10px;
 	font: 10pt "Calibri";
 	color:white;
 	text-decoration: none;
+	text-align: center;
+	margin-left:5px;
+	margin-right:5px;
 }
+
+#nav-button:hover {
+	background-color: rgb(0, 170, 100);
+}
+
+#nav-button:active {
+	background-color: rgb(0, 200, 120);
+}
+
+#download-label {
+	background-color: white;
+	box-shadow: 3px 3px 2px gainsboro;
+	font-family:arial;
+	width: 60%;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding-bottom:20px;
+	padding-top:20px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	text-align: center;
+	font-size:15px;
+	font-family: GloberSemiBold;
+	margin-top:40px;
+}
+
+#download-label > p {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+#download-box {
+	width: 100%;
+	background-color: white;
+	box-shadow: 3px 3px 2px gainsboro;
+	height:200px;
+	border-radius: 10px;
+	padding-top: 50px;
+	padding-bottom:50px;
+	margin-top:50px;
+
+}
+
+
+
+#download-box-os {
+	font-size:25px;
+	font-family: GloberSemiBold;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#download-box-version {
+	font-size:14px;
+	font-family: GloberSemiBold;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#download-button {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius: 5px;
+	background-color: rgb(0, 150, 80);
+	border-radius: 10px;
+	font: 10pt "Calibri";
+	color:white;
+	margin-top:10px;
+	text-decoration: none;
+	margin-left:20px;
+	margin-right:20px;
+	
+}
+
+#download-button:hover {
+	background-color: rgb(0, 170, 100);
+}
+
+#download-button:active {
+	background-color: rgb(0, 200, 120);
+}
+
+#download-button-box {
+	align-items: center;
+	height: 300px;
+	text-align:center;
+	margin-top:50px;
+	
+}
+
+#footer {
+	background-color: white;
+	box-shadow: 3px 3px 2px gainsboro;
+	font-family:arial;
+	border-radius: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 95%;
+	margin: 0 auto;
+	height: 50px;
+	display: flex;
+    align-items: center;
+	margin-top:50px;
+	text-align: center;
+	
+	
+}
+
+#footer > p {
+	align-items: center;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: GloberSemiBold;
+}
+
+

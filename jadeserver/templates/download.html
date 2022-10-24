@@ -6,7 +6,25 @@
     </head>
     
     <body>
-        {% include "nav.html"%}
+        <div id="main">
+            {% include "nav.html"%}
+
+            <div id="download-label">
+                <br>
+                <h1>Download the Jade Launcher</h1>
+                <p>The Jade Launcher is the one and only place to download, update, and launch apps like Jade Assistant.</p>
+            </div>
+
+            <div id="download-box">
+                <p id="download-box-os">Please select an OS</p>
+                <p id="download-box-version">Version {{version}}</p>
+                <div id="download-button-box">
+                    <a href= "{% url 'index' %}" id="download-button">Windows</a>
+                    <a href= "{% url 'index' %}" id="download-button">Mac</a>
+                </div>
+            </div>
+        </div>
+        
     </body>
 
 </html>
