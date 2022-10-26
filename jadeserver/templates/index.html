@@ -41,8 +41,16 @@
                     <p>Jade Assistant</p>
                     <p id="app-desc">Jade Assistant is the virtual assistant that can help you open some apps, answer Q&A and change size to fit what you're working on.<br><br> You can download it in the Jade Launcher.</p>
                 </div>
-
             </div>
+
+            <div id="latest-posts-box">
+                <h1>Latest posts</h1>
+                <br>
+                <a href="{% url 'post' %}?{{ latestPost1.code }}&">{{ latestPost1.code }}</a>
+                <a href="{% url 'post' %}?{{ latestPost2.code }}&">{{ latestPost2.code }}</a>
+                <a href="{% url 'post' %}?{{ latestPost3.code }}&">{{ latestPost3.code }}</a>
+            </div>
+            
             {% include "footer.html"%}
         </div>
     </body>

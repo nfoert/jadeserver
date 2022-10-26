@@ -1,9 +1,10 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 class News(models.Model):
     code = models.CharField(max_length=12, default="0")
     head = models.CharField(max_length=200, default="Headline not specified")
-    text = models.TextField(max_length=10000, default="Body text not specified")
+    text = RichTextField(blank=True, null=True)
     date = models.CharField(max_length=10, default="No Date")
     url = models.CharField(max_length=300, default="none")
 

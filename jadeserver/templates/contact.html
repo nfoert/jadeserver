@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    </head>
+    
+    <body>
+        <div id="main">
+            {% include "nav.html"%}
+            <div id="contact-label-box">
+                <h1>Contact me</h1>
+                <p>Jade Software was built by a teenager over a year and a half of work</p>
+            </div>
+
+            <div id="contact-me-email-box">
+                <h1>Send an email</h1>
+                <p>Have a suggestion, question, or comment? I'd like to hear your feedback. Send me an email at jadesoftware1@gmail.com</p>
+                <a id="contact-me-email-button" href="mailto:jadesoftware1@gmail.com">Email me</a>
+            </div>
+            <div id="contact-me-github-box">
+                <h1>Report a bug</h1>
+                <p>Did you find something that's not right? Please, report a bug on my GitHub's issue page. Don't have a GitHub account? Send me an email instead and I'll add it for you.</p>
+                <a id="contact-me-github-button" href="https://github.com/nfoert/jadelauncher/issues">Report a bug</a>
+            </div>
+
+        <br>
+        <br>
+        {% include "footer.html"%}    
+        </div>
+    </body>
+
+</html>

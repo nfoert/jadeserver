@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    </head>
+
+    <body>
+        <div id="main-posts">
+            {% include "nav.html"%}
+            <div id="post-box">
+                
+                <h1>{{ head }}</h1>
+                <h3>{{ date }}</h3>
+                <hr>
+                <p>{{ text | safe }}</p>
+            </div>
+            {% include "footer.html"%}
+
+        </div>
+
+    </body>
+</html>

@@ -39,7 +39,22 @@ html, body {
     -moz-animation: mainGradient 30s ease infinite;
     animation: mainGradient 30s ease infinite;
 	
-	height: 1000px;
+    height: 1200px;
+	
+
+}
+
+#main-posts {
+	background: linear-gradient(270deg, #42c9a6, #16b7e1, #a85dfd);
+    background-size: 600% 600%;
+
+    -webkit-animation: mainGradient 30s ease infinite;
+    -moz-animation: mainGradient 30s ease infinite;
+    animation: mainGradient 30s ease infinite;
+	
+    height:auto;
+	padding-bottom: 50px;
+	
 
 }
 
@@ -234,7 +249,7 @@ html, body {
 	width: 100%;
 	background-color: white;
 	box-shadow: 3px 3px 2px gainsboro;
-	height:200px;
+	height:225px;
 	border-radius: 10px;
 	padding-top: 50px;
 	padding-bottom:50px;
@@ -288,7 +303,7 @@ html, body {
 
 #download-button-box {
 	align-items: center;
-	height: 300px;
+	height: 50px;
 	text-align:center;
 	margin-top:50px;
 	
@@ -302,12 +317,18 @@ html, body {
 	padding-right: 10px;
 	padding-left: 10px;
 	width: 95%;
-	margin: 0 auto;
+	margin-top: 20px;
+	margin-left:1.5%;
+	margin-right:3.5%;
 	height: 50px;
-	display: flex;
+	
     align-items: center;
-	margin-top:50px;
+	
 	text-align: center;
+	padding-top:1px;
+	padding-bottom:10px;
+	position:fixed;
+	bottom: 20px;
 	
 	
 }
@@ -317,6 +338,244 @@ html, body {
 	margin-left:auto;
 	margin-right:auto;
 	font-family: GloberSemiBold;
+	font-size: 12px;
+	
 }
+
+#download-having-trouble {
+	font-family: GloberSemiBold;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+	font-size: 14px;
+}
+
+#contact-label-box {
+	background-color: white;
+	box-shadow: 3px 3px 2px gainsboro;
+	font-family:arial;
+	width: 60%;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding-bottom:20px;
+	padding-top:20px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	margin-top:50px;
+	margin-top:50px;
+}
+
+#contact-label-box > h1 {
+	text-align: center;
+	font-size: 30px;
+	font-family:GloberSemiBold;
+}
+
+#contact-label-box > p {
+	text-align: center;
+	font-size: 15px;
+	font-family:GloberSemiBold;
+}
+
+#contact-me-email-box {
+	background-color: white;
+	box-shadow: 3px 3px 2px gainsboro;
+	font-family:arial;
+	width: 80%;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding-bottom:20px;
+	padding-top:20px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	margin-top:50px;
+	margin-top:50px;
+	height: 200px;
+	align-items: center;
+	text-align: center;
+}
+
+#contact-me-email-box > h1 {
+	text-align: center;
+	font-size: 30px;
+	font-family:GloberSemiBold;
+}
+
+#contact-me-email-box > p {
+	text-align: center;
+	font-size: 15px;
+	font-family:GloberSemiBold;
+	margin-bottom: 20px;
+	
+}
+
+#contact-me-email-button {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius: 5px;
+	background-color: rgb(0, 150, 80);
+	border-radius: 10px;
+	font: 10pt "Calibri";
+	color:white;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-decoration: none;
+	text-align: center;
+}
+
+#contact-me-email-button:hover {
+	background-color: rgb(0, 170, 100);
+}
+
+#contact-me-email-button:active {
+	background-color: rgb(0, 200, 120);
+}
+
+#contact-me-github-box {
+	background-color: white;
+	box-shadow: 3px 3px 2px gainsboro;
+	font-family:arial;
+	width: 80%;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding-bottom:20px;
+	padding-top:20px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	margin-top:50px;
+	margin-top:50px;
+	height: 200px;
+	align-items: center;
+	text-align: center;
+}
+
+#contact-me-github-box > h1 {
+	text-align: center;
+	font-size: 30px;
+	font-family:GloberSemiBold;
+}
+
+#contact-me-github-box > p {
+	text-align: center;
+	font-size: 15px;
+	font-family:GloberSemiBold;
+	margin-bottom: 20px;
+	
+}
+
+#contact-me-github-button {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius: 5px;
+	background-color: rgb(0, 150, 80);
+	border-radius: 10px;
+	font: 10pt "Calibri";
+	color:white;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-decoration: none;
+	text-align: center;
+}
+
+#contact-me-github-button:hover {
+	background-color: rgb(0, 170, 100);
+}
+
+#contact-me-github-button:active {
+	background-color: rgb(0, 200, 120);
+}
+
+#post-box {
+	width: 90%;
+	background-color: white;
+	box-shadow: 3px 3px 2px gainsboro;
+	height:auto;
+	border-radius: 10px;
+	padding-top: 50px;
+	padding-bottom:50px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:100px
+
+}
+
+#post-box > h1 {
+	padding-left: 20px;
+	font-family: GloberSemiBold;
+	font-size: 25px;
+	padding-right:20px;
+}
+
+#post-box > h3 {
+	padding-left: 30px;
+	font-family: GloberSemiBold;
+	font-size: 15px;
+}
+
+#post-box > p {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top:10px;
+	font-family: GloberSemiBold;
+	font-size: 15px;
+	
+}
+
+#latest-posts-box {
+	width: 90%;
+	background-color: white;
+	box-shadow: 3px 3px 2px gainsboro;
+	height:auto;
+	border-radius: 10px;
+	padding-top: 50px;
+	padding-bottom:50px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:100px;
+	align-items: center;
+	
+}
+
+#latest-posts-box > h1 {
+	font-family: GloberSemiBold;
+	text-align: center;
+	font-size: 30px;
+}
+
+#latest-posts-box > a {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius: 5px;
+	background-color: rgb(0, 150, 80);
+	border-radius: 10px;
+	font: 10pt "Calibri";
+	color:white;
+	margin-top:10px;
+	text-decoration: none;
+	margin-left:75px;
+	margin-right:75px;
+}
+
+#latest-posts-box > a:hover {
+	background-color: rgb(0, 170, 100);
+}
+
+#latest-posts-box > a:active {
+	background-color: rgb(0, 200, 120);
+}
+
+
+
 
 

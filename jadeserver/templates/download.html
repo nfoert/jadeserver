@@ -19,10 +19,21 @@
                 <p id="download-box-os">Please select an OS</p>
                 <p id="download-box-version">Version {{version}}</p>
                 <div id="download-button-box">
-                    <a href= "{% url 'index' %}" id="download-button">Windows</a>
-                    <a href= "{% url 'index' %}" id="download-button">Mac</a>
+                    <a href="https://nfoert.pythonanywhere.com/jadeLauncher/downloadInstaller?Windows&" id="download-button">Windows</a>
+                    <a href= "https://nfoert.pythonanywhere.com/jadeLauncher/downloadInstaller?Mac&" id="download-button">Mac</a>
                 </div>
+                <p id="download-having-trouble">Having trouble downloading? Wait a while before trying again, use a different browser, or contact me.</p>
+                
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            {% include "footer.html"%}
         </div>
         
     </body>
