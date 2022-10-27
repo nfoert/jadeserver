@@ -212,6 +212,9 @@ html, body {
 	text-align: center;
 	margin-left:5px;
 	margin-right:5px;
+	padding-top:3px;
+	padding-bottom:3px;
+	font-size: 14px;
 }
 
 #nav-button:hover {
