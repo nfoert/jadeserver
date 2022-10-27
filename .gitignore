@@ -2,12 +2,12 @@ jadeserver/db.sqlite3
 jadeserver/jadeserver/settings.py
 .venv
 venv
-jade/__pycache__
-jadeAssistant/__pycache__
-jadeChat/__pycache__
-jadeCore/__pycache__
-jadeLauncher/__pycache__
-jadeserver/__pycache__
-jadeServerUtilities/__pycache__
-jadesite/__pycache__
+jadeserver/jade/__pycache__
+jadeserver/jadeAssistant/__pycache__
+jadeserver/jadeChat/__pycache__
+jadeserver/jadeCore/__pycache__
+jadeserver/jadeLauncher/__pycache__
+jadeserver/jadeserver/__pycache__
+jadeserver/jadeServerUtilities/__pycache__
+jadeserver/jadesite/__pycache__
 
