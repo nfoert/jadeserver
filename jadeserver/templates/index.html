@@ -44,11 +44,45 @@
             </div>
 
             <div id="latest-posts-box">
+                <!-- Thanks to heckj's answer here https://stackoverflow.com/questions/3484149/limit-number-of-characters-with-django-template-filter-->
                 <h1>Latest posts</h1>
                 <br>
-                <a href="{% url 'post' %}?{{ latestPost1.code }}&">{{ latestPost1.code }}</a>
-                <a href="{% url 'post' %}?{{ latestPost2.code }}&">{{ latestPost2.code }}</a>
-                <a href="{% url 'post' %}?{{ latestPost3.code }}&">{{ latestPost3.code }}</a>
+                <div id="latest-posts-boxes">
+
+                    <div id="post-boxes">
+                        <h1 id="latest-post-head">{{ latestPost1.head }}</h1>
+                        <div id="latest-post-text">
+                            <p>{{ latestPost3.text | safe | slice:":100" }}...</p>
+                        </div>
+                        <a href="{% url 'post' %}?{{ latestPost1.code }}&" id="read-post-button">Read post</a>
+                        
+                            
+                        
+                    </div>
+                    
+
+                    <div id="post-boxes">
+                        <h1 id="latest-post-head">{{ latestPost2.head }}</h1>
+                        <div id="latest-post-text">
+                            <p>{{ latestPost2.text | safe | slice:":100" }}...</p>
+                        </div>
+                        <div id="latest-post-button-box">
+                            <a href="{% url 'post' %}?{{ latestPost2.code }}&" id="read-post-button">Read post</a>
+                        </div>
+                    </div>
+
+                    <div id="post-boxes">
+                        <h1 id="latest-post-head">{{ latestPost3.head }}</h1>
+                        <div id="latest-post-text">
+                            <p>{{ latestPost3.text | safe | slice:":100" }}...</p>
+                        </div>
+                        <div id="latest-post-button-box">
+                            <a href="{% url 'post' %}?{{ latestPost3.code }}&" id="read-post-button">Read post</a>
+                        </div>
+                    </div>
+
+                
+                </div>
             </div>
             
             {% include "footer.html"%}
