@@ -8,9 +8,7 @@ from django.utils import timezone
 from django.contrib.auth.hashers import make_password, check_password
 
 if platform.system() == "Linux":
-    import sys
-    sys.path.insert(0, '/home/nfoert/jadeserver/jadeServerUtilities/')
-    import jadeServerUtilities as jsu
+    import jadeServerUtilities.jadeServerUtilities as jsu
 
 elif platform.system() == "Windows":
     import jadeServerUtilities.jadeServerUtilities as jsu
