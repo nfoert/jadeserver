@@ -3,9 +3,7 @@ from django.http import HttpResponse
 from jadeLauncher.models import Version, News
 import platform
 if platform.system() == "Linux":
-    import sys
-    sys.path.insert(0, '/home/nfoert/.virtualenvs/jadeserver/jadeserver/jadeserver/jadeServerUtilities')
-    import jadeServerUtilities as jsu
+    import jadeServerUtilities.jadeServerUtilities as jsu
 
 elif platform.system() == "Windows":
     import jadeServerUtilities.jadeServerUtilities as jsu

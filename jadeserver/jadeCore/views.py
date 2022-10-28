@@ -10,9 +10,7 @@ import platform
 utc = pytz.UTC
 
 if platform.system() == "Linux":
-    import sys
-    sys.path.insert(0, '/home/nfoert/jadeserver/jadeServerUtilities/')
-    import jadeServerUtilities as jsu
+    import jadeServerUtilities.jadeServerUtilities as jsu
 
 elif platform.system() == "Windows":
     import jadeServerUtilities.jadeServerUtilities as jsu
