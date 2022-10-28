@@ -6,7 +6,7 @@ import platform
 def log(tag, text):
     now = datetime.datetime.now()
     if platform.system() == "Linux":
-        logFile = open("/home/nfoert/jadeserver/jadeServerUtilities/JadeServerLog.txt", "a")
+        logFile = open("JadeServerLog.txt", "a")
 
     elif platform.system() == "Windows":
         logFile = open("./jadeServerUtilities/JadeServerLog.txt", "a")

@@ -4,7 +4,7 @@ from jadeLauncher.models import Version, News
 import platform
 if platform.system() == "Linux":
     import sys
-    sys.path.insert(0, '/home/nfoert/jadeserver/jadeServerUtilities/')
+    sys.path.insert(0, '/home/nfoert/.virtualenvs/jadeserver/jadeserver/jadeserver/jadeServerUtilities')
     import jadeServerUtilities as jsu
 
 elif platform.system() == "Windows":
@@ -17,7 +17,7 @@ def index(request):
     latestPost2 = allPosts[len(allPosts) - 2]
     latestPost3 = allPosts[len(allPosts) - 3]
     context = {
-        'latestPost1': 
+        'latestPost1':
         {
             "code": latestPost1.code,
             "head": latestPost1.head,
@@ -29,14 +29,14 @@ def index(request):
            "code": latestPost2.code,
             "head": latestPost2.head,
             "text": latestPost2.text,
-            "date": latestPost2.date, 
+            "date": latestPost2.date,
         },
         "latestPost3":
         {
            "code": latestPost3.code,
             "head": latestPost3.head,
             "text": latestPost3.text,
-            "date": latestPost3.date, 
+            "date": latestPost3.date,
         }
     }
     return render(request, "index.html", context)
