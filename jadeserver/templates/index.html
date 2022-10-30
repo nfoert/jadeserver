@@ -50,7 +50,7 @@
                 <div id="latest-posts-boxes">
 
                     <div id="post-boxes">
-                        <h1 id="latest-post-head">{{ latestPost1.head }}</h1>
+                        <h1 id="latest-post-head">{{ latestPost1.head | slice:":27" }}...</h1>
                         <div id="latest-post-text">
                             <p>{{ latestPost3.text | safe | slice:":100" }}...</p>
                         </div>
@@ -62,7 +62,7 @@
                     
 
                     <div id="post-boxes">
-                        <h1 id="latest-post-head">{{ latestPost2.head }}</h1>
+                        <h1 id="latest-post-head">{{ latestPost2.head | slice:":27" }}...</h1>
                         <div id="latest-post-text">
                             <p>{{ latestPost2.text | safe | slice:":100" }}...</p>
                         </div>
@@ -72,7 +72,7 @@
                     </div>
 
                     <div id="post-boxes">
-                        <h1 id="latest-post-head">{{ latestPost3.head }}</h1>
+                        <h1 id="latest-post-head">{{ latestPost3.head | slice:":27" }}...</h1>
                         <div id="latest-post-text">
                             <p>{{ latestPost3.text | safe | slice:":100" }}...</p>
                         </div>

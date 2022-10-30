@@ -39,7 +39,8 @@ html, body {
     -moz-animation: mainGradient 30s ease infinite;
     animation: mainGradient 30s ease infinite;
 	
-    height: 1450px;
+    padding-bottom: 50px;
+	margin: 0% auto 0;
 	
 
 }
@@ -52,7 +53,38 @@ html, body {
     -moz-animation: mainGradient 30s ease infinite;
     animation: mainGradient 30s ease infinite;
 	
-    height:auto;
+    min-height:100%;
+	padding-bottom: 50px;
+	
+	
+
+}
+
+
+#main-download {
+	background: linear-gradient(270deg, #42c9a6, #16b7e1, #a85dfd);
+    background-size: 600% 600%;
+
+    -webkit-animation: mainGradient 30s ease infinite;
+    -moz-animation: mainGradient 30s ease infinite;
+    animation: mainGradient 30s ease infinite;
+	
+    height:900px;
+	padding-bottom: 50px;
+	
+	
+
+}
+
+#main-contact {
+	background: linear-gradient(270deg, #42c9a6, #16b7e1, #a85dfd);
+    background-size: 600% 600%;
+
+    -webkit-animation: mainGradient 30s ease infinite;
+    -moz-animation: mainGradient 30s ease infinite;
+    animation: mainGradient 30s ease infinite;
+	
+    height:900px;
 	padding-bottom: 50px;
 	
 
@@ -604,7 +636,7 @@ html, body {
 }
 
 #post-boxes {
-	width:200px;
+	width:175px;
 	/*border: 2px solid black;*/
 	height:250px;
 	
