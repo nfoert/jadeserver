@@ -72,3 +72,24 @@ def post(request):
         }
 
         return render(request, "post.html", context)
+
+def allposts(request):
+    url = request.get_full_path()
+    if "?" and "&" in url:
+        categorySubstring = jsu.substring(url, "?category=", "&")
+        
+        newsGet = News.objects.filter(category=categorySubstring).exclude(category='hidden').order_by("date").reverse()
+    
+        context = {
+            "news" : newsGet
+        }
+        return render(request, "allposts.html", context)
+
+    else:
+        newsGet = News.objects.all().exclude(category='hidden').order_by("date").reverse()
+    
+        context = {
+            "news" : newsGet
+        }
+        return render(request, "allposts.html", context)
+        
