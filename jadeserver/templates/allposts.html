@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    </head>
+    
+    <body>
+        <div id="main-posts">
+            
+            {% include "nav.html"%}
+
+            <div id="category-box">
+                <p>Categories</p>
+                <a href="{% url 'allposts' %}?category=changelog&" id="category-box-button">Changelogs</a>
+            </div>
+
+            <div>
+                
+                {% if news %}
+                    <p id="allposts-results-box">{{ news | length }} results</p>
+                    {% for i in news %}
+                        <div id="allposts-box">
+                            <h1 id="allposts-box-head">{{ i.head }}</h1>
+                            <p id="allposts-box-date"><i>{{ i.date }}</i></p>
+                            <hr>
+                            <p id="allposts-box-text">{{ i.text | safe | slice:":100" }}...</p>
+                            <p> </p>
+                            {% if i.code %}
+                                <a href="{% url 'post' %}?{{ i.code }}&" id="allposts-box-button">Read post</a>
+                            {% else %}
+                                <p>Unable to read post!</p>
+                            {% endif %}
+                                 
+                            </div>
+
+                    {% endfor %}
+
+                {% else %}
+                    <p id="allposts-results-box">No results</p>
+
+                {% endif %}
+            </div>
+
+            <!--{% include "footer.html"%}-->
+        </div>
+    </body>
+</html>
