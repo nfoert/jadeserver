@@ -3,6 +3,7 @@
 
 <html>
     <head>
+        <title>Jade Software | All posts</title>
         <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
     </head>
     
@@ -14,6 +15,7 @@
             <div id="category-box">
                 <p>Categories</p>
                 <a href="{% url 'allposts' %}?category=changelog&" id="category-box-button">Changelogs</a>
+                <a href="{% url 'allposts' %}?category=learn&" id="category-box-button">Learn</a>
             </div>
 
             <div>

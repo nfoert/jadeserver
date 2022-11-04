@@ -57,21 +57,28 @@ def post(request):
     if "?" and "&" in url:
         #Url is good
         codeSubstring = jsu.substring(url, "?", "&")
-        try:
-            postGet = News.objects.filter(code=codeSubstring)
-            print(len(postGet))
+        postGet = News.objects.filter(code=codeSubstring)
+        print(len(postGet))
+        print(len(postGet) >= 1)
+        
+        
 
-        except:
-            print("Post not found.")
-            return False
+        if postGet.exists():
+            context = {
+                "head" : postGet[0].head,
+                "text" : postGet[0].text,
+                "date" : postGet[0].date
+            }
 
-        context = {
-            "head" : postGet[0].head,
-            "text" : postGet[0].text,
-            "date" : postGet[0].date
-        }
+            return render(request, "post.html", context)
 
-        return render(request, "post.html", context)
+        else:
+            context = {
+                "head" : "404 post not found",
+                "text" : "",
+                "date" : ""
+            }
+            return render(request, "post.html", context)
 
 def allposts(request):
     url = request.get_full_path()
