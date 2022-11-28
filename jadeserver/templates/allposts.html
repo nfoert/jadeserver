@@ -27,7 +27,7 @@
                             <h1 id="allposts-box-head">{{ i.head }}</h1>
                             <p id="allposts-box-date"><i>{{ i.date }}</i></p>
                             <hr>
-                            <p id="allposts-box-text">{{ i.text | safe | slice:":100" }}...</p>
+                            <p id="allposts-box-text">{{ i.text | striptags | slice:":100" }}...</p>
                             <p> </p>
                             {% if i.code %}
                                 <a href="{% url 'post' %}?{{ i.code }}&" id="allposts-box-button">Read post</a>

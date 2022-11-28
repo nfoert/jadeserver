@@ -18,10 +18,16 @@
 
             <div id="download-box">
                 <p id="download-box-os">Please select an OS</p>
-                <p id="download-box-version">Version {{version}}</p>
                 <div id="download-button-box">
-                    <a href="https://nfoert.pythonanywhere.com/jadeLauncher/downloadInstaller?Windows&" id="download-button">Windows</a>
-                    <a href= "https://nfoert.pythonanywhere.com/jadeLauncher/downloadInstaller?Mac&" id="download-button">Mac</a>
+                    <div id="windows-download-button-box">
+                        <a href="https://nfoert.pythonanywhere.com/jadeLauncher/downloadInstaller?Windows&" id="download-button">Windows</a>
+                        <p id="download-box-version">Version {{version}}</p>
+                    </div>
+                    <br>
+                    <div id="mac-download-button-box">
+                        <a href= "https://nfoert.pythonanywhere.com/jadeLauncher/downloadInstaller?Mac&" id="download-button">Mac</a>
+                        <p id="download-box-version">Version 0.0.12 <a href="https://nfoert.pythonanywhere.com/jadesite/post/?jsAnRD&">(Read this)</a></p>
+                    </div>
                 </div>
                 <p id="download-having-trouble">Having trouble downloading? Wait a while before trying again, use a different browser, or contact me.</p>
                 
