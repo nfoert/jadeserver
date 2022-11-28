@@ -5,11 +5,12 @@
     <head>
         <title>Jade Software</title>
         <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+        <meta name="google-site-verification" content="CRG9Hokzy-GcuD3_oKspC7-hsKdZVYr9Bxy_-Yr9Pyk" />
     </head>
-    
+
     <body>
         <div id="main">
-            
+
             {% include "nav.html"%}
             <br>
             <br>
@@ -19,12 +20,12 @@
                 <div id="welcome">
                     <h1>Welcome to Jade</h1>
                 </div>
-            
+
                 <div id="welcome-text">
                         <p>My name is Jade and I'm a virtual assistant designed to be as helpful as possible. I can open apps for you and answer some questions.</p>
-                
+
                 </div>
-                
+
             </div>
             <br>
             <br>
@@ -47,7 +48,7 @@
             <div id="latest-posts-box">
                 <!-- Thanks to heckj's answer here https://stackoverflow.com/questions/3484149/limit-number-of-characters-with-django-template-filter-->
                 <h1>Latest posts</h1>
-                
+
                 <br>
                 <div id="latest-posts-boxes">
 
@@ -57,11 +58,11 @@
                             <p>{{ latestPost3.text | safe | slice:":100" }}...</p>
                         </div>
                         <a href="{% url 'post' %}?{{ latestPost1.code }}&" id="read-post-button">Read post</a>
-                        
-                            
-                        
+
+
+
                     </div>
-                    
+
 
                     <div id="post-boxes">
                         <h1 id="latest-post-head">{{ latestPost2.head | slice:":27" }}...</h1>
@@ -83,14 +84,14 @@
                         </div>
                     </div>
 
-                    
+
                 </div>
-                
-                
+
+
             </div>
-            
-            
-            
+
+
+
             {% include "footer.html"%}
         </div>
     </body>
