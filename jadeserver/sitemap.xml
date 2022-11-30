@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/download/</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/contact/</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/allposts/</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?tnjsite&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?jsAnRD&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?L:downLaunch&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/allposts/?category=changelog&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/allposts/?category=learn&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?jUpdateOct22&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?lv0.0.12&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?lv0.0.11&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?lv0.0.10&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?lv0.0.9&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?ja0.0.3&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?lv0.0.8&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?ja0.0.2&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?lv0.0.7&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?JABeta&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nfoert.pythonanywhere.com/jadesite/post/?lv0.0.6&amp;</loc>
+  <lastmod>2022-11-29T15:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
