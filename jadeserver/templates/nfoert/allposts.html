@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'nfoertStyle.css' %}"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        {% include "nfoert/nav.html"%}
+        <h1 id="allposts-header">All Posts</h1>
+        {% if post %}
+            <p id="allposts-results-box">{{ post | length }} results</p>
+            {% for i in post %}
+                <div id="allposts-postBox">
+                    <h1 id="allposts-postBox-head">{{ i.head }}</h1>
+                    <p id="allposts-postBox-date"><i>{{ i.date }}</i></p>
+                    <hr>
+                    <p id="allposts-postBox-text">{{ i.text | striptags | slice:":100" }}...</p>
+                    <p> </p>
+                    {% if i.code %}
+                        <a href="{% url 'post' %}?{{ i.code }}&", id="allposts-postBox-button", class="hvr-grow">Read post</a>
+                    {% else %}
+                        <p>Unable to read post!</p>
+                    {% endif %}
+                                 
+                </div>
+
+            {% endfor %}
+
+        {% else %}
+            <p id="allposts-results-box">No results</p>
+
+        {% endif %}
+
+    </body>
+</html>

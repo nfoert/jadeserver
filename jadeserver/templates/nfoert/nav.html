@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'nfoertStyle.css' %}"/>
+    </head>
+
+    <body>
+        
+        <div id="nav-bar">
+            <a href="{% url 'index' %}", id="nav-nfoert", class="hvr-grow">nfoert</p>
+            <a href="{% url 'allposts' %}" id="nav-allposts", class="hvr-grow">All Posts</a>
+        </div>
+    </body>
+</html>

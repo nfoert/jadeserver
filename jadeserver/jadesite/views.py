@@ -37,7 +37,7 @@ def index(request):
             "date": latestPost3.date,
         }
     }
-    return render(request, "index.html", context)
+    return render(request, "jadesite/index.html", context)
 
 def download(request):
     versionData = Version.objects.all()
@@ -47,10 +47,10 @@ def download(request):
     context = {
         "version": f"{major}.{minor}.{patch}",
     }
-    return render(request, "download.html", context)
+    return render(request, "jadesite/download.html", context)
 
 def contact(request):
-    return render(request, "contact.html")
+    return render(request, "jadesite/contact.html")
 
 def post(request):
     url = request.get_full_path()
@@ -70,7 +70,7 @@ def post(request):
                 "date" : postGet[0].date
             }
 
-            return render(request, "post.html", context)
+            return render(request, "jadesite/post.html", context)
 
         else:
             context = {
@@ -78,7 +78,7 @@ def post(request):
                 "text" : "",
                 "date" : ""
             }
-            return render(request, "post.html", context)
+            return render(request, "jadesite/post.html", context)
 
 def allposts(request):
     url = request.get_full_path()
@@ -90,7 +90,7 @@ def allposts(request):
         context = {
             "news" : newsGet
         }
-        return render(request, "allposts.html", context)
+        return render(request, "jadesite/allposts.html", context)
 
     else:
         newsGet = News.objects.all().exclude(category='hidden').order_by("date").reverse()
@@ -98,5 +98,5 @@ def allposts(request):
         context = {
             "news" : newsGet
         }
-        return render(request, "allposts.html", context)
+        return render(request, "jadesite/allposts.html", context)
         

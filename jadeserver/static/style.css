@@ -19,7 +19,6 @@ html, body {
 	display: flex;
     align-items: center;
 	
-	
 }
 
 #nav-img {
@@ -114,7 +113,7 @@ html, body {
 }
 
 #welcome-text {
-	font-size:15px;
+	font-size:20px;
 	font-family: GloberSemiBold;
 	text-align: center;
 	padding-right:100px;

@@ -1,0 +1,469 @@
+/* Fonts */
+@font-face {
+	font-family: 'Simplifica';
+	src: local('Abc'),
+		 url('../static/Simplifica.ttf') format("opentype");
+  }
+
+@font-face {
+	font-family: 'OpenSansLight';
+	src: local('Abc'),
+		 url('../static/OpenSansLight.ttf') format("opentype");
+  }
+
+@font-face {
+	font-family: 'OpenSansRegular';
+	src: local('Abc'),
+		 url('../static/OpenSansRegular.ttf') format("opentype");
+  }
+
+  @font-face {
+	font-family: 'OpenSansCondensedLight';
+	src: local('Abc'),
+		 url('../static/OpenSansCondensedLight.ttf') format("opentype");
+  }
+
+/* IanLunn's css hover effects https://github.com/IanLunn/Hover */
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+/* Main */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Navigation Bar */
+@media (min-width:1000px) {
+    /* Large Screens */
+    #nav-bar {
+        background-color: rgb(0, 4, 61);
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #nav-nfoert {
+        color: white;
+        font-size:30px;
+        font-family: OpenSansRegular;
+        padding-left: 20px;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    
+    #nav-allposts {
+        width: 100px;
+        margin-left: 20px;
+        border-radius: 10px;
+        background-color: rgb(116, 116, 116);
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding-top:5px;
+        padding-bottom: 5px;
+        font-family: OpenSansRegular;
+    }
+    
+}
+
+@media (max-width:1000px) {
+    /* Small screens */
+    #nav-bar {
+        background-color: rgb(0, 4, 61);
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #nav-nfoert {
+        color: white;
+        font-size:20px;
+        font-family: OpenSansRegular;
+        padding-left: 10px;
+        text-decoration: none;
+        margin-top: 15px;
+    }
+    
+    #nav-allposts {
+        width: 75px;
+        margin-left: 10px;
+        border-radius: 10px;
+        background-color: rgb(116, 116, 116);
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding-top:5px;
+        padding-bottom: 5px;
+        font-family: OpenSansRegular;
+        font-size: 12px;
+    }
+    
+}
+
+/* Index */
+@media (min-width:1000px) {
+    /* Large Screens */
+    #index-welcomeBox {
+        background-color: rgb(0, 4, 61);
+        box-shadow: 3px 3px 2px rgb(0, 6, 92);
+        text-align: center;
+        border-radius: 10px;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: -200px;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    #index-welcomeBox > p {
+        color: white;
+        font-family: OpenSansRegular;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #index-welcomeBox > h1 {
+        color: white;
+        font-family: OpenSansLight;
+        font-size: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #index-imageBox {
+        background-image: url("/static/cool-background.png");
+        background-size: cover;
+        height: 500px;
+    }
+
+    #index-welcomeBox > button {
+        width: 150px;
+        margin-left: 20px;
+        margin-left: 20px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: rgb(116, 116, 116);
+        color: white;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        border: 0px;
+    }
+
+    #index-latestPost-label {
+        font-size: 40px;
+        font-family: OpenSansRegular;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    #index-latestPost-mainBox {
+        text-align: center;
+        margin-top: 50px;
+        height: 400px;
+        padding-bottom: 50px;
+    
+    }
+    
+    #index-latestPost-mainBox-box {
+        width: 300px;
+        display: inline-block;
+        margin-left: 75px;
+        margin-right: 75px;
+        height: 100%;
+        background-color: rgb(0, 4, 61);
+        box-shadow: 3px 3px 2px rgb(0, 6, 92);
+        border-radius: 10px;
+    }
+    
+    #index-latestPost-mainBox-header {
+        color: white;
+        text-align: left;
+        padding-left: 20px;
+        font-family: OpenSansRegular;
+    }
+    
+    #index-latestPost-mainBox-date {
+        color: white;
+        text-align: left;
+        padding-left: 30px;
+        font-family: OpenSansLight;
+    }
+    
+    
+    #index-latestPost-mainBox-text {
+        color: white;
+        font-family: OpenSansLight;
+        font-size: 20px;
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #index-latestPostButton-button {
+        width: 200px;
+        border-radius: 10px;
+        background-color: rgb(116, 116, 116);
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        font-size: 14px;
+        border: 0px;
+        text-decoration: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: OpenSansRegular;
+    }
+    
+    #index-latestPostButton {
+        text-align: center;
+    }
+}
+
+@media (max-width:1000px) {
+    /* Small screens */
+    #index-welcomeBox {
+        background-color: rgb(0, 4, 61);
+        box-shadow: 3px 3px 2px rgb(0, 6, 92);
+        text-align: center;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -300px;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    #index-welcomeBox > p {
+        color: white;
+        font-family: OpenSansRegular;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+    
+    #index-welcomeBox > h1 {
+        color: white;
+        font-family: OpenSansLight;
+        font-size: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #index-imageBox {
+        background-image: url("/static/cool-background.png");
+        background-size: cover;
+        height: 400px;
+    }
+
+    #index-welcomeBox > button {
+        width: 200px;
+        margin-left: 20px;
+        margin-left: 20px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: rgb(116, 116, 116);
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        border: 0px;
+    }
+    /* VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
+    #index-latestPost-label {
+        font-size: 40px;
+        font-family: OpenSansRegular;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    #index-latestPost-mainBox {
+        margin-top: 50px;
+        height: 400px;
+        padding-bottom: 50px;
+        text-align: center;
+    
+    }
+    
+    #index-latestPost-mainBox-box {
+        width: 90%;
+        height: 100%;
+        background-color: rgb(0, 4, 61);
+        box-shadow: 3px 3px 2px rgb(0, 6, 92);
+        border-radius: 10px;
+        margin-top:20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    #index-latestPost-mainBox-header {
+        color: white;
+        text-align: left;
+        padding-left: 20px;
+        font-family: OpenSansRegular;
+    }
+    
+    #index-latestPost-mainBox-date {
+        color: white;
+        text-align: left;
+        padding-left: 30px;
+        font-family: OpenSansLight;
+    }
+    
+    
+    #index-latestPost-mainBox-text {
+        color: white;
+        font-family: OpenSansLight;
+        font-size: 20px;
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #index-latestPostButton-button {
+        width: 200px;
+        border-radius: 10px;
+        background-color: rgb(116, 116, 116);
+        color: white;
+        margin-top: 900px; /* Dirty hack for small screens */
+        margin-bottom: 50px;
+        font-size: 14px;
+        border: 0px;
+        text-decoration: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: OpenSansRegular;
+    }
+    
+    #index-latestPostButton {
+        text-align: center;
+    }
+}
+
+/* All posts */
+#allposts-postBox {
+    width: 95%;
+    background-color: rgb(0, 4, 61);
+    box-shadow: 3px 3px 2px rgb(0, 6, 92);
+    border-radius: 10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#allposts-postBox-head {
+    color: white;
+    font-family: OpenSansRegular;
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+#allposts-postBox-date {
+    color: white;
+    font-family: OpenSansRegular;
+    font-size: 16px;
+    padding-left: 20px;
+
+}
+
+#allposts-postBox-text {
+    color: white;
+    font-family: OpenSansRegular;
+    font-size: 16px;
+    padding-left: 25px;
+
+}
+
+#allposts-postBox-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-family: OpenSansRegular;
+}
+
+#allposts-header {
+    font-family: OpenSansRegular;
+    font-size: 40px;
+    text-align: center;
+}
+
+#allposts-results-box {
+    width: 94%;
+    background-color: rgb(0, 4, 61);
+    box-shadow: 3px 3px 2px rgb(0, 6, 92);
+    border-radius: 10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: OpenSansRegular;
+    padding-left: 20px;
+}
+
+/* Post */
+#post-box {
+    width: 95%;
+    background-color: rgb(0, 4, 61);
+    box-shadow: 3px 3px 2px rgb(0, 6, 92);
+    border-radius: 10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#post-head {
+    color: white;
+    font-family: OpenSansRegular;
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+#post-date {
+    color: white;
+    font-family: OpenSansRegular;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+#post-text {
+    color: white;
+    font-family: OpenSansRegular;
+    font-size: 16px;
+    padding-left: 25px;
+}

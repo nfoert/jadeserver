@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'nfoertStyle.css' %}"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        {% include "nfoert/nav.html"%}
+        <div id="post-box">
+
+            <h1 id="post-head">{{ head }}</h1>
+            <h3 id="post-date">{{ date }}</h3>
+            <hr>
+            <div id="post-text">
+                <p>{{ text | safe }}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    </body>
+
+</html>
