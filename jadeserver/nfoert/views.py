@@ -41,9 +41,9 @@ def allposts(request):
     url = request.get_full_path()
     if "?" and "&" in url:
         categorySubstring = jsu.substring(url, "?category=", "&")
-        
+
         newsGet = Post.objects.filter(category=categorySubstring).exclude(category='hidden').order_by("date").reverse()
-    
+
         context = {
             "post" : newsGet
         }
@@ -51,7 +51,7 @@ def allposts(request):
 
     else:
         newsGet = Post.objects.all().exclude(category='hidden').order_by("date").reverse()
-    
+
         context = {
             "post" : newsGet
         }
@@ -65,8 +65,8 @@ def post(request):
         postGet = Post.objects.filter(code=codeSubstring)
         print(len(postGet))
         print(len(postGet) >= 1)
-        
-        
+
+
 
         if postGet.exists():
             context = {

@@ -21,21 +21,21 @@
         </div>
         <h1 id="index-latestPost-label">Latest posts</h1>
         <div id="index-latestPost-mainBox">
-            <a href="{% url 'post' %}?{{ post1.code }}&">
+            <a href="{% url 'nfoert:post' %}?{{ post1.code }}&">
                 <div id="index-latestPost-mainBox-box", class="hvr-grow">
                     <h1 id="index-latestPost-mainBox-header">{{ post1.head | slice:":50" }}</h1>
                     <p id="index-latestPost-mainBox-date">{{ post1.date }}</p>
                     <p id="index-latestPost-mainBox-text">{{ post1.text | striptags | slice:":100" }}...</p>
                 </div>
             </a>
-            <a href="{% url 'post' %}?{{ post2.code }}&">
+            <a href="{% url 'nfoert:post' %}?{{ post2.code }}&">
                 <div id="index-latestPost-mainBox-box", class="hvr-grow">
                     <h1 id="index-latestPost-mainBox-header">{{ post2.head | slice:":50" }}</h1>
                     <p id="index-latestPost-mainBox-date">{{ post2.date }}</p>
                     <p id="index-latestPost-mainBox-text">{{ post2.text | striptags | slice:":100" }}...</p>
                 </div>
             </a>
-            <a href="{% url 'post' %}?{{ post3.code }}&">
+            <a href="{% url 'nfoert:post' %}?{{ post3.code }}&">
                 <div id="index-latestPost-mainBox-box", class="hvr-grow">
                     <h1 id="index-latestPost-mainBox-header">{{ post3.head | slice:":50" }}</h1>
                     <p id="index-latestPost-mainBox-date">{{ post3.date }}</p>
@@ -44,7 +44,7 @@
             </a>
         </div>
         <div id="index-latestPostButton">
-            <a href="{% url 'allposts' %}", id="index-latestPostButton-button", class="hvr-grow">All posts</a>
+            <a href="{% url 'nfoert:allposts' %}", id="index-latestPostButton-button", class="hvr-grow">All posts</a>
         </div>
     </body>
 </html>

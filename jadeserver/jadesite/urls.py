@@ -2,6 +2,7 @@ from django.urls import path
 
 from jadesite import views
 
+app_name = "jadesite"
 urlpatterns = [
     path('', views.index, name='index'),
     path("download/", views.download, name='download'),

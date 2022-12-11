@@ -21,8 +21,8 @@ urlpatterns = [
     path('jadeCore/', include('jadeCore.urls')),
     path('jadeAssistant/', include('jadeAssistant.urls')),
     path('jadeLauncher/', include('jadeLauncher.urls')),
-    path('jadesite/', include('jadesite.urls')),
-    path('nfoert/', include('nfoert.urls')),
+    path('jadesite/', include('jadesite.urls', namespace='jadesite')),
+    path('nfoert/', include('nfoert.urls', namespace='nfoert')),
     path('admin/', admin.site.urls)
 
 ]
