@@ -14,7 +14,7 @@ if __name__ == '__main__':
         print(f"Sending email with username: '{allAccounts[i].userName}' and email '{allAccounts[i].email}'")
         resp = client.send(
             event="V7SRR5CC8Z4VP3MXAXXBZTV20N3G",
-            recipient="Hello test",
+            recipient="user",
             profile={
                 "email": allAccounts[i].email,
             },
