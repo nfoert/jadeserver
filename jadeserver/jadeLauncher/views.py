@@ -165,11 +165,11 @@ def download(request):
         wm = jsu.substring(downloadUrl, "?", "&")
         if wm == "Windows":
             jsu.log("INFO", "Someone just downloaded the Launcher for Windows!")
-            return redirect("https://www.dropbox.com/s/0vqag0hks2bwafe/Jade%20Launcher.exe?dl=1")
+            return redirect("https://www.dropbox.com/s/po4xqq9u1v1l9lb/Jade%20Launcher.exe?dl=1")
 
         elif wm == "Mac":
             jsu.log("INFO", "Someone just downloaded the Launcher for Mac!")
-            return redirect("https://www.dropbox.com/s/0lkbjia5z6wnyxi/Jade%20Launcher.zip?dl=1")
+            return redirect("https://www.dropbox.com/sh/420rqqzzxogjwu3/AAALFPVjx3VpX4iWMvKjbAa1a?dl=1")
 
         else:
             jsu.log("DOWNLOAD ERROR", "There was a problem downloading Jade Launcher. OS={wm}")
@@ -184,7 +184,7 @@ def downloadInstaller(request):
         wm = jsu.substring(downloadUrl, "?", "&")
         if wm == "Windows":
             jsu.log("INFO", "Someone just downloaded the Launcher's Installer for Windows!")
-            return redirect("https://www.dropbox.com/s/4tr6tm17iu1g4kg/Jade%20Launcher%20Installer.exe?dl=1")
+            return redirect("https://www.dropbox.com/s/16g890hwnw981dx/Jade%20Launcher%20Installer.exe?dl=1")
 
         elif wm == "Mac":
             jsu.log("INFO", "Someone just downloaded the Launcher's Installer for Mac!")
