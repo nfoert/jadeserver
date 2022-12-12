@@ -4,17 +4,17 @@
     <head>
         <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
     </head>
-    
+
     <body>
         <br id="top-break">
         <div id="nav-bar">
             <img src="{% static "jadeLogo.png" %}" alt="home" id="nav-img"/>
-            <a href= "{% url 'index' %}" id="nav-button">Home</a>
-            <a href= "{% url 'download' %}" id="nav-button">Download</a>
-            <a href= "{% url 'contact' %}" id="nav-button">Contact</a>
-            <a href= "{% url 'allposts' %}" id="nav-button">All Posts</a>
+            <a href= "{% url 'jadesite:index' %}" id="nav-button">Home</a>
+            <a href= "{% url 'jadesite:download' %}" id="nav-button">Download</a>
+            <a href= "{% url 'jadesite:contact' %}" id="nav-button">Contact</a>
+            <a href= "{% url 'jadesite:allposts' %}" id="nav-button">All Posts</a>
             <p id="beta"><b>[BETA]</b></p>
         </div>
-        
+
     </body>
 </html>
