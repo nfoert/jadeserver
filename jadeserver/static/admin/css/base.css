@@ -57,6 +57,7 @@
   --object-tools-hover-bg: var(--close-button-hover-bg);
 }
 
+
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #264b5d;

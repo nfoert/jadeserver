@@ -21,11 +21,11 @@
                     <p id="allposts-postBox-text">{{ i.text | striptags | slice:":100" }}...</p>
                     <p> </p>
                     {% if i.code %}
-                        <a href="{% url 'post' %}?{{ i.code }}&", id="allposts-postBox-button", class="hvr-grow">Read post</a>
+                        <a href="{% url 'nfoert:post' %}?{{ i.code }}&", id="allposts-postBox-button", class="hvr-grow">Read post</a>
                     {% else %}
                         <p>Unable to read post!</p>
                     {% endif %}
-                                 
+
                 </div>
 
             {% endfor %}

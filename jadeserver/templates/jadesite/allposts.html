@@ -6,20 +6,20 @@
         <title>Jade Software | All posts</title>
         <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
     </head>
-    
+
     <body>
         <div id="main-posts">
-            
+
             {% include "jadesite/nav.html"%}
 
             <div id="category-box">
                 <p>Categories</p>
-                <a href="{% url 'allposts' %}?category=changelog&" id="category-box-button">Changelogs</a>
-                <a href="{% url 'allposts' %}?category=learn&" id="category-box-button">Learn</a>
+                <a href="{% url 'jadesite:allposts' %}?category=changelog&" id="category-box-button">Changelogs</a>
+                <a href="{% url 'jadesite:allposts' %}?category=learn&" id="category-box-button">Learn</a>
             </div>
 
             <div>
-                
+
                 {% if news %}
                     <p id="allposts-results-box">{{ news | length }} results</p>
                     {% for i in news %}
@@ -30,11 +30,11 @@
                             <p id="allposts-box-text">{{ i.text | striptags | slice:":100" }}...</p>
                             <p> </p>
                             {% if i.code %}
-                                <a href="{% url 'post' %}?{{ i.code }}&" id="allposts-box-button">Read post</a>
+                                <a href="{% url 'jadesite:post' %}?{{ i.code }}&" id="allposts-box-button">Read post</a>
                             {% else %}
                                 <p>Unable to read post!</p>
                             {% endif %}
-                                 
+
                             </div>
 
                     {% endfor %}
@@ -45,7 +45,7 @@
                 {% endif %}
             </div>
 
-            <!--{% include "footer.html"%}-->
+            <!--Footer has been removed-->
         </div>
     </body>
 </html>
